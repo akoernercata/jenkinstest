@@ -8,11 +8,6 @@ pipeline {
         CREDENTIALS_ID = 'jenkins-gke-deployer@.iam.gserviceaccount.com'
     }
     stages {
-        stage('build') {
-            steps {
-                sh 'go version'
-            }
-        },
         stage('Deploy to GKE') {
             steps{
                 step([
