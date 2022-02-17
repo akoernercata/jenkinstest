@@ -1,6 +1,6 @@
 Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent { docker { image 'golang:1.17.5-alpine' } }
+    agent any
      environment {
         PROJECT_ID = 'catalant-test-env'
         CLUSTER_NAME = 'jenkins'
